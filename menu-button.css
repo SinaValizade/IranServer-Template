@@ -1,0 +1,39 @@
+/*$in@*/
+#btn-menu {
+    display: none;
+    direction: ltr;
+}
+#btn-menu .line{
+    position: relative;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    background: #2c2cb6;
+    border-radius: 5px;
+    transition: all 400ms linear;
+}
+#btn-menu:hover{
+    cursor: pointer;
+}
+.active .line:nth-of-type(2) , .active .line:nth-of-type(3){
+    width: 0 !important;
+    opacity: 0;
+}
+.active .line:nth-of-type(1){
+    transform: rotate(-45deg);
+    top: 10px !important;
+}
+.active .line:nth-of-type(4){
+    transform: rotate(45deg);
+    top: -11px !important;
+}
+@media screen and (max-width: 950px){
+    #btn-menu{
+        display: flex;
+        width: 30px;
+        height: 25px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
