@@ -1,1 +1,0 @@
-# IranServer-Template
